@@ -1,0 +1,27 @@
+:root{--bg:#f6f7fb;--card:#fff;--tx:#1b1f2a;--mu:#667085;--ac:#c62828;--ac2:#1565c0;--ok:#2e7d32;--bad:#c62828;--bd:#dde1ea;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12141a;--card:#1b1f2a;--tx:#e8eaf0;--mu:#9aa3b5;--bd:#2c3242;--ac:#ef5350;--ac2:#64b5f6;--ok:#66bb6a;--bad:#ef5350}}
+:root[data-theme="dark"]{--bg:#12141a;--card:#1b1f2a;--tx:#e8eaf0;--mu:#9aa3b5;--bd:#2c3242;--ac:#ef5350;--ac2:#64b5f6;--ok:#66bb6a;--bad:#ef5350}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.7 'Hind Siliguri',system-ui,sans-serif}
+main{max-width:760px;margin:0 auto;padding:16px}
+h1{font-size:1.4rem;margin:.2em 0}h1 span{color:var(--ac)}h2{margin:.3em 0}
+.sub{color:var(--mu);margin:0 0 14px}
+.card,.prompt,details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 14px;margin:10px 0}
+.card{cursor:pointer}.card h3{margin:.2em 0}.card small{color:var(--mu)}
+.tag{background:var(--ac2);color:#fff;border-radius:6px;padding:1px 8px;font-size:.8rem}
+.chips,.tabs{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+button{font:inherit;cursor:pointer;border:1px solid var(--bd);background:var(--card);color:var(--tx);border-radius:10px;padding:6px 14px}
+button.on{background:var(--ac);color:#fff;border-color:var(--ac)}
+button.pri{background:var(--ac2);color:#fff;border-color:var(--ac2)}
+button.link{border:0;background:none;color:var(--ac2);padding:0}
+.tabs button{flex:1}
+.prompt{border-left:4px solid var(--ac2);color:var(--mu)}
+.tip{background:rgba(46,125,50,.12);border-radius:10px;padding:8px 12px;margin:10px 0}
+.ans p{text-align:justify}
+input,textarea,select{font:inherit;color:var(--tx);background:var(--bg);border:1px solid var(--bd);border-radius:8px;padding:6px 8px;width:100%;box-sizing:border-box;margin:4px 0}
+.ans input{display:inline-block;width:auto;padding:0 4px;border:0;border-bottom:2px solid var(--ac2);border-radius:0;background:transparent;text-align:center}
+.ans input.ok{border-color:var(--ok);color:var(--ok)}.ans input.bad{border-color:var(--bad);color:var(--bad)}
+#res{font-weight:600;margin:8px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.box{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:8px 14px;margin:10px 0}
+table{width:100%;border-collapse:collapse;margin:8px 0}td{border:1px solid var(--bd);padding:4px 8px}
